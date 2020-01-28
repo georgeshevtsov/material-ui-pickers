@@ -44,10 +44,6 @@ export interface PickerViewProps<TView extends PickerView>
   title?: string;
   showToolbar?: boolean;
   ToolbarComponent: React.ComponentType<ToolbarComponentProps<any>>;
-  // TODO move out, cause it is DateTimePickerOnly
-  hideTabs?: boolean;
-  dateRangeIcon?: React.ReactNode;
-  timeIcon?: React.ReactNode;
 }
 
 interface PickerProps<T extends PickerView> extends PickerViewProps<T> {
